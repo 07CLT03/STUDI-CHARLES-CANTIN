@@ -1,0 +1,19 @@
+{
+  "name": "studi-charles-cantin",
+  "version": "1.0.0",
+  "description": "évaluation STUDI - site vitrine portfolio - Charles Cantin - Photographie ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/07CLT03/STUDI-CHARLES-CANTIN.git"
+  },
+  "author": "charlotte lafont",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/07CLT03/STUDI-CHARLES-CANTIN/issues"
+  },
+  "homepage": "https://github.com/07CLT03/STUDI-CHARLES-CANTIN#readme"
+}
