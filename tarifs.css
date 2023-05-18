@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Vujahday+Script&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* SECTION 1 - NAVBAR */
+.navbar .nav-item {
+  position: relative;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  height: 2.9px;
+  width: 0;
+  transition: 0.4s ease-in;
+}
+
+.nav-link:hover {
+  color: #806c6c;
+}
+
+.nav-item:hover::before {
+  width: 85%;
+  background-color: #806c6c;
+}
+
+/*  MEDIA QUERIES NAVBAR LINK */
+@media screen and (min-width: 992px) {
+  .navbar .nav-item {
+    font-size: 1.1em;
+    padding: 15px 13px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .navbar .nav-item {
+    font-size: 1.3em;
+    padding: 15px 22px;
+  }
+}
+/* SECTION 2 - VERTICAL SLIDER */
+.main-title {
+  font-family: "Vujahday Script", cursive;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+}
+.slider-container .left-slide {
+  position: absolute;
+  top: 0;
+  left: 8%;
+  height: 70vh;
+  width: 37%;
+  transition: transform 0.3s ease-in-out;
+}
+.slider-container .left-slide .slider-title {
+  font-family: "Vujahday Script", cursive;
+}
+.slider-container .left-slide p {
+  font-weight: lighter;
+  padding: 0 30px;
+}
+.slider-container .left-slide .slider-1 {
+  background: hsl(248, 21%, 15%);
+  background: linear-gradient(90deg, hsl(248, 21%, 15%) 0%, hsl(250, 14%, 61%) 100%);
+  background: -webkit-linear-gradient(90deg, hsl(248, 21%, 15%) 0%, hsl(250, 14%, 61%) 100%);
+}
+.slider-container .left-slide .slider-2 {
+  background: hsl(284, 80%, 10%);
+  background: linear-gradient(90deg, hsl(284, 80%, 10%) 0%, hsl(290, 25%, 76%) 100%);
+  background: -webkit-linear-gradient(90deg, hsl(284, 80%, 10%) 0%, hsl(290, 25%, 76%) 100%);
+}
+.slider-container .left-slide .slider-3 {
+  background: hsl(213, 77%, 14%);
+  background: linear-gradient(90deg, hsl(213, 77%, 14%) 0%, hsl(202, 27%, 45%) 100%);
+  background: -webkit-linear-gradient(90deg, hsl(213, 77%, 14%) 0%, hsl(202, 27%, 45%) 100%);
+}
+.slider-container .left-slide .slider-4 {
+  background: hsl(333, 37%, 46%);
+  background: linear-gradient(90deg, hsl(333, 37%, 46%) 0%, hsl(243, 10%, 47%) 50%, hsl(197, 44%, 42%) 100%);
+  background: -webkit-linear-gradient(90deg, hsl(333, 37%, 46%) 0%, hsl(243, 10%, 47%) 50%, hsl(197, 44%, 42%) 100%);
+}
+.slider-container .left-slide .slider-5 {
+  background: hsl(23, 41%, 9%);
+  background: linear-gradient(90deg, hsl(23, 41%, 9%) 10%, hsl(18, 16%, 53%) 90%);
+  background: -webkit-linear-gradient(90deg, hsl(23, 41%, 9%) 10%, hsl(18, 16%, 53%) 90%);
+}
+.slider-container .left-slide .slider-6 {
+  background-image: linear-gradient(to right, #141e30, #243b55);
+}
+.slider-container .left-slide .btn {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(100, 130, 159) 0%, #554444 90%);
+  border: transparent;
+}
+.slider-container .left-slide .btn:hover {
+  transform: scale(1.2);
+  transition: 0.1s ease-in;
+}
+.slider-container .left-slide > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+.slider-container .right-slide {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  height: 70vh;
+  width: 45%;
+  transition: transform 0.5s ease;
+}
+.slider-container .right-slide .img-1 {
+  background-image: url(images/mariage/mariage.jpg);
+}
+.slider-container .right-slide .img-2 {
+  background-image: url(images/grossesse/einceinte.jpg);
+}
+.slider-container .right-slide .img-3 {
+  background-image: url(images/bebe/bebe.jpg);
+}
+.slider-container .right-slide .img-4 {
+  background-image: url(images/famille/famille.jpg);
+}
+.slider-container .right-slide .img-5 {
+  background-image: url(images/couple/couplex.jpg);
+}
+.slider-container .right-slide .img-6 {
+  background-image: url(images/portrait/oldmna.jpg);
+}
+.slider-container .right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+.slider-container .actions-buttons button {
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  font-size: 3.2em;
+  color: white;
+}
+.slider-container .actions-buttons .down {
+  transform: translateX(-110%);
+}
+.slider-container .actions-buttons .up {
+  transform: translateY(-80%);
+}
+.slider-container .actions-buttons .up:hover {
+  color: rgba(206, 201, 201, 0.514);
+}
+.slider-container .actions-buttons .down:hover {
+  color: rgb(119, 119, 119);
+}
+
+/* MEDIA QUERIES  */
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 5em;
+    word-spacing: 5px;
+    letter-spacing: 7px;
+  }
+  .slider-container {
+    margin: 120px auto 120px auto;
+    height: 70vh;
+  }
+  .slider-container .slider-title {
+    font-size: 3.2em;
+  }
+}
+/* SECTION 4 - FOOTER  */
+.footer-informations {
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+.footer-informations .card {
+  background-color: transparent !important;
+}
+.footer-informations .card .card-title {
+  font-family: "Vujahday Script", cursive;
+  word-spacing: 3.58px;
+  letter-spacing: 3.5px;
+}
+.footer-informations .card .footer-card-link:hover {
+  font-weight: bolder;
+}
+.footer-informations .card .footer-card-link:hover a:hover {
+  color: #806c6c;
+}
+.footer-informations .card .bi-facebook {
+  color: #3b5998;
+  color: rgb(59, 89, 152);
+}
+.footer-informations .card .bi-linkedin {
+  color: #007bb6;
+  color: rgb(0, 123, 182);
+}
+.footer-informations .card .bi-instagram {
+  color: #bc2a8d;
+  color: rgb(188, 42, 141);
+}
+.footer-informations .card .bi-twitter {
+  color: #00aced;
+  color: rgb(0, 172, 237);
+}
+
+@media screen and (max-width: 576px) {
+  .copyright {
+    font-size: 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card-title {
+    font-size: 1.8em;
+  }
+}
+.copyright {
+  background-color: #806c6c;
+}
+.copyright .CL {
+  font-family: "Vujahday Script", cursive;
+}/*# sourceMappingURL=tarifs.css.map */

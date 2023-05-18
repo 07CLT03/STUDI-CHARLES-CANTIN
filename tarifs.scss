@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Vujahday+Script&display=swap');
+
+$background-color:#806c6c; 
+$main-border-color:#806c6c; 
+$quote-police: 'Homemade Apple', cursive; 
+$main-title-police:'Vujahday Script', cursive;
+
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* SECTION 1 - NAVBAR */
+
+.navbar {
+
+  .nav-item {
+    position: relative;
+  }
+
+}
+
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  height: 2.9px;
+  width: 0;
+  transition: 0.4s ease-in;
+}
+
+.nav-link:hover {
+  color: #806c6c;
+}
+.nav-item:hover::before {
+  width: 85%;
+  background-color: #806c6c;
+}
+
+
+/*  MEDIA QUERIES NAVBAR LINK */
+
+@media screen and (min-width:992px) {
+
+  .navbar {
+    .nav-item {
+      font-size: 1.1em;
+      padding: 15px 13px;
+    }
+  }
+}
+
+@media screen and (min-width:1300px) {
+
+  .navbar {
+    .nav-item {
+      font-size: 1.3em;
+      padding: 15px 22px ;
+    }
+  }
+}
+
+
+
+/* SECTION 2 - VERTICAL SLIDER */
+
+.main-title {
+  font-family: 'Vujahday Script', cursive;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+
+    .left-slide {
+      position: absolute;
+      top: 0;
+      left: 8%;
+      height: 70vh;
+      width:37%;
+      transition: transform .3s ease-in-out;
+
+        .slider-title {
+          font-family: 'Vujahday Script', cursive;
+        }
+
+        p {
+          font-weight: lighter;
+          padding: 0 30px;
+          
+        }
+
+        .slider-1 {
+          background: hsla(248, 21%, 15%, 1);
+          background: linear-gradient(90deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
+          background: -moz-linear-gradient(90deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
+          background: -webkit-linear-gradient(90deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
+        }
+        .slider-2 {
+          background: hsla(284, 80%, 10%, 1);
+          background: linear-gradient(90deg, hsla(284, 80%, 10%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+          background: -moz-linear-gradient(90deg, hsla(284, 80%, 10%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+          background: -webkit-linear-gradient(90deg, hsla(284, 80%, 10%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+        }
+        .slider-3 {
+          background: hsla(213, 77%, 14%, 1);
+          background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+          background: -moz-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+          background: -webkit-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+        }
+        .slider-4 {
+          background: hsla(333, 37%, 46%, 1);
+          background: linear-gradient(90deg, hsla(333, 37%, 46%, 1) 0%, hsla(243, 10%, 47%, 1) 50%, hsla(197, 44%, 42%, 1) 100%);
+          background: -moz-linear-gradient(90deg, hsla(333, 37%, 46%, 1) 0%, hsla(243, 10%, 47%, 1) 50%, hsla(197, 44%, 42%, 1) 100%);
+          background: -webkit-linear-gradient(90deg, hsla(333, 37%, 46%, 1) 0%, hsla(243, 10%, 47%, 1) 50%, hsla(197, 44%, 42%, 1) 100%);
+        }  
+        .slider-5 {
+          background: hsla(23, 41%, 9%, 1);
+          background: linear-gradient(90deg, hsla(23, 41%, 9%, 1) 10%, hsla(18, 16%, 53%, 1) 90%);
+          background: -moz-linear-gradient(90deg, hsla(23, 41%, 9%, 1) 10%, hsla(18, 16%, 53%, 1) 90%);
+          background: -webkit-linear-gradient(90deg, hsla(23, 41%, 9%, 1) 10%, hsla(18, 16%, 53%, 1) 90%);
+        }
+
+        .slider-6 {
+          background-image: linear-gradient(to right, #141e30, #243b55);
+        }
+
+        .btn {
+          background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,130,159,1) 0%, #554444 90% );
+          border: transparent;
+        }
+
+        .btn:hover {
+          transform: scale(1.2);
+          transition: .1s ease-in;
+        }
+
+    }
+
+    
+
+    .left-slide > div {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: whitesmoke;
+    }
+
+    .right-slide {
+      position: absolute;
+      top: 0;
+      left: 45%;
+      height: 70vh;
+      width: 45%;
+      transition: transform .5s ease;
+
+        .img-1 {
+          background-image: url(images/mariage/mariage.jpg);
+        }
+        .img-2 {
+          background-image: url(images/grossesse/einceinte.jpg);
+        }
+        .img-3 {
+          background-image: url(images/bebe/bebe.jpg);
+        }
+        .img-4 {
+          background-image: url(images/famille/famille.jpg);
+        }
+        .img-5 {
+          background-image: url(images/couple/couplex.jpg);
+        }
+        .img-6 {
+          background-image: url(images/portrait/oldmna.jpg);
+        }
+
+
+    }
+
+    .right-slide > div {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 100%;
+      width: 100%;
+    }
+
+
+    .actions-buttons {
+      
+      button {
+        position: absolute;
+        left: 45%;
+        top: 20%;
+        z-index: 10;
+        border: none;
+        background-color: transparent;
+        font-size: 3.2em;
+        color: white;
+      }
+
+      .down {
+        transform: translateX(-110%);
+      }
+      .up {
+        transform: translateY(-80%);
+      }
+
+      .up:hover {
+        color: rgba(206, 201, 201, 0.514);
+      }
+      .down:hover {
+        color: rgb(119, 119, 119);
+      }
+      
+    }
+  
+}
+
+
+/* MEDIA QUERIES  */
+  
+@media screen and (min-width:1200px) {
+
+  .main-title {
+    font-size: 5em;
+    word-spacing: 5px;
+    letter-spacing: 7px;
+  }
+
+  .slider-container {
+    margin: 120px auto 120px auto;
+    height: 70vh;
+
+      .slider-title {
+        font-size: 3.2em;
+      }
+    }    
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* SECTION 4 - FOOTER  */
+
+
+.footer-informations {
+  margin-top: 150px;
+  margin-bottom: 70px;
+
+  .card {
+
+    background-color: transparent!important;
+    .card-title {
+      font-family: $main-title-police ;
+      word-spacing: 3.58px;
+      letter-spacing: 3.5px;
+    }
+
+    .footer-card-link:hover {
+      font-weight: bolder;
+
+      a:hover{
+        color: #806c6c;
+      }
+    }
+
+    .bi-facebook {
+      color: #3b5998; color: rgb(59, 89, 152);
+    }
+    .bi-linkedin {
+      color: #007bb6; color: rgb(0, 123, 182);
+    }
+    .bi-instagram{
+      color: #bc2a8d; color: rgb(188, 42, 141);
+    }
+    .bi-twitter{
+      color: #00aced; color: rgb(0, 172, 237);
+    }
+  }  
+}  
+
+@media screen and (max-width:576px) {
+  .copyright {
+    font-size: 7em;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .card-title {
+    font-size: 1.8em;
+  }
+}
+
+.copyright {
+  background-color: #806c6c;
+
+  .CL {
+    font-family: $main-title-police ;
+  }
+ 
+}
